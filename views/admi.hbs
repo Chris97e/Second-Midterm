@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Parcial 2 | admi</title>
+    <link rel="stylesheet" href="./css/admi.css">
+    <link rel="stylesheet" href="./css/animate.css">
+    <script src="/js/date.js"></script>
+
+</head>
+
+<body>
+
+    <div class="cuerpo_pantalla">
+
+
+        <div class="informacion animated fadeInDown">
+
+
+
+            
+
+        </div>
+
+
+        <div class="centro ">
+            <ul class="animated fadeInDown">
+                
+                {{#each visitas.general}}
+                <li class="cuadro">
+                    <div><p>NOMBRE: {{url}}</p></div>
+                    <div><p>VISTAS: {{visitas}}</p></div>
+                    <div><p>ÚLTIMO INGRESO: {{fecha}} </p></div>
+                </li>
+                {{/each}}
+            </ul>
+        </div>
+
+        <div class="menu animated fadeInUp">
+            <ul class="lista">
+                <li class="elemento_lista"><a href="/">home</a></li>
+                <li class="elemento_lista"><a href="/bore">bore</a></li>
+                <li class="elemento_lista"><a href="/fun">fun</a></li>
+                <li class="elemento_lista"><a href="/admi">admi</a></li>
+
+            </ul>
+        </div>
+
+
+    </div>
+
+</body>
+
+</html>

@@ -26,6 +26,8 @@ function paginaCargada() {
         return i;
     }
     
+
+
     function mostrarhora(){ 
         var f=new Date();
         cad=f.getHours()+":"+f.getMinutes()+":"+f.getSeconds(); 
