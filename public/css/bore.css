@@ -21,62 +21,10 @@ ul {
 body .cuerpo_pantalla {
   width: 100vw;
   height: 100vh;
-  background-color: #8D84F9;
-  background-image: url("https://i.giphy.com/media/8Z2f3ozBfHmGOAoFg5/giphy.webp");
-  background-repeat: no-repeat;
+  background-image: url("https://media.giphy.com/media/vjwACwDxB0hZ6/giphy.gif");
   background-position: center;
-}
-
-body .cuerpo_pantalla .informacion {
-  width: 100%;
-  height: 100%;
-  position: fixed;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-flow: row wrap;
-          flex-flow: row wrap;
-  -webkit-box-pack: start;
-      -ms-flex-pack: start;
-          justify-content: flex-start;
-  -ms-flex-line-pack: start;
-      align-content: flex-start;
-}
-
-body .cuerpo_pantalla .informacion .numeroVisitado {
-  -webkit-filter: opacity(0.2);
-          filter: opacity(0.2);
-  margin: 50pt;
-  margin-top: 10pt;
-  color: white;
-  font-size: 300pt;
-  font-weight: bold;
-}
-
-body .cuerpo_pantalla .informacion .fecha {
-  -webkit-filter: opacity(0.2);
-          filter: opacity(0.2);
-  margin: 50pt;
-  margin-top: -320pt;
-  margin-left: 450pt;
-  color: white;
-  font-size: 100pt;
-  justify-self: flex-end;
-  font-weight: bold;
-}
-
-body .cuerpo_pantalla .informacion .hora {
-  -webkit-filter: opacity(0.2);
-          filter: opacity(0.2);
-  margin: 50pt;
-  margin-top: 10pt;
-  color: white;
-  font-size: 140pt;
-  margin-left: 100pt;
-  font-weight: bold;
-  margin-top: 70pt;
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
 body .cuerpo_pantalla .menu {
@@ -126,29 +74,64 @@ body .cuerpo_pantalla .centro {
   width: 100%;
   height: 100%;
   text-align: justify;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-flow: column nowrap;
           flex-flow: column nowrap;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
   justify-items: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
   -ms-flex-line-pack: center;
       align-content: center;
   position: fixed;
+  display: none;
 }
 
 body .cuerpo_pantalla .centro p {
   color: white;
-  font-size: 70pt;
+  font-size: 10pt;
   font-weight: bold;
   padding: 10pt;
 }
-/*# sourceMappingURL=home.css.map */
+
+body .cuerpo_pantalla .informacion {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -ms-flex-line-pack: end;
+      align-content: flex-end;
+}
+
+body .cuerpo_pantalla .informacion .fecha {
+  display: none;
+}
+
+body .cuerpo_pantalla .informacion .numeroVisitado {
+  display: none;
+}
+
+body .cuerpo_pantalla .informacion .hora {
+  margin: 50pt;
+  margin-top: 10pt;
+  color: whitesmoke;
+  font-size: 140pt;
+  margin-left: 100pt;
+  font-weight: bold;
+  margin-top: 70pt;
+  margin-right: 40pt;
+}
+/*# sourceMappingURL=bore.css.map */
