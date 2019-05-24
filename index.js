@@ -31,9 +31,11 @@ app.get('/', function (request, response) {
     var contexto ={
         
         numero: 100,
-        visitas: 0
+        visitas: visitas
 
     }
+    
+
     vistas("Home");
     response.render('home', contexto);
 
