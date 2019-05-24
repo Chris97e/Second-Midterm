@@ -2,7 +2,7 @@ function paginaCargada() {
     
     var horas = document.querySelector('.hora');
     var fecha = document.querySelector('.fecha');
-    var numero = document.querySelector('.numeroVisitado');
+    
     
     //fecha
     var hoy = new Date();
@@ -37,17 +37,20 @@ function paginaCargada() {
 
     //reloj
     function mueveReloj(){ 
-        momentoActual = new Date() 
-        hora = momentoActual.getHours() 
-        minuto = momentoActual.getMinutes() 
-        segundo = momentoActual.getSeconds() 
+        momentoActual = new Date(); 
+        hora = momentoActual.getHours(); 
+        minuto = momentoActual.getMinutes(); 
+        segundo = momentoActual.getSeconds(); 
 
-        horaImprimible = hora + ":" + minuto + ":" + segundo 
+        horaImprimible = hora + ":" + minuto + ":" + segundo; 
 
         horas.innerHTML = horaImprimible;
         setTimeout(mueveReloj,1000)
     }
 
+
+
+    
     
     
     
