@@ -12,10 +12,21 @@ app.set('view engine', 'hbs');
 app.use(express.static('public'));
 app.use(express.urlencoded({ extended: true }));
 
+
+
 app.get('/', function (request, response) {
-    response.render('home');
+   
+    var contexto ={
+        
+        numero: 100,
+        visitas: 0
+
+    }
+    
+    response.render('home', contexto);
+
 });
 
 app.listen(3000, function () {
-    console.log('Aplicación ejemplo, escuchando el puerto 3000!');
+    console.log('Estoy funcionando bien sensualón, ¡escuchando en el puerto 3000!');
 });
